@@ -42,7 +42,8 @@ class _VeiculoListPageState extends State<VeiculoListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Meus Veículos")),
+      appBar: AppBar(
+          backgroundColor: Colors.purple, title: const Text("Meus Veículos")),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () => _abrirForm(),

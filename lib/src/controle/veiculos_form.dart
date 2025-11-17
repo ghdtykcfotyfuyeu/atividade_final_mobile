@@ -58,6 +58,7 @@ class _VeiculoFormPageState extends State<VeiculoFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.purple,
         title: Text(widget.veiculo == null ? "Novo Veículo" : "Editar Veículo"),
       ),
       body: Padding(

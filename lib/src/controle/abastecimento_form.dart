@@ -82,6 +82,7 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.orange,
         title: Text(widget.abastecimento == null
             ? "Novo Abastecimento"
             : "Editar Abastecimento"),
@@ -107,10 +108,7 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
                 },
                 child: const Text("Selecionar Data"),
               ),
-
               const SizedBox(height: 20),
-
-              // 🔽 Seleção de Veículo
               DropdownButtonFormField<String>(
                 value: _veiculoId,
                 decoration: const InputDecoration(labelText: "Veículo"),
@@ -123,9 +121,7 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
                 validator: (v) => v == null ? "Selecione um veículo" : null,
                 onChanged: (v) => setState(() => _veiculoId = v),
               ),
-
               const SizedBox(height: 16),
-
               TextFormField(
                 controller: _litros,
                 decoration:
@@ -133,18 +129,14 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
                 keyboardType: TextInputType.number,
                 validator: (v) => v!.isEmpty ? "Informe os litros" : null,
               ),
-
               const SizedBox(height: 16),
-
               TextFormField(
                 controller: _valor,
                 decoration: const InputDecoration(labelText: "Valor Pago"),
                 keyboardType: TextInputType.number,
                 validator: (v) => v!.isEmpty ? "Informe o valor" : null,
               ),
-
               const SizedBox(height: 16),
-
               TextFormField(
                 controller: _km,
                 decoration:
@@ -152,9 +144,7 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
                 keyboardType: TextInputType.number,
                 validator: (v) => v!.isEmpty ? "Informe a quilometragem" : null,
               ),
-
               const SizedBox(height: 16),
-
               DropdownButtonFormField<String>(
                 value: _combustivel,
                 decoration:
@@ -167,17 +157,13 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
                 ],
                 onChanged: (v) => _combustivel = v!,
               ),
-
               const SizedBox(height: 16),
-
               TextFormField(
                 controller: _obs,
                 decoration:
                     const InputDecoration(labelText: "Observação (opcional)"),
               ),
-
               const SizedBox(height: 20),
-
               ElevatedButton(
                 onPressed: _salvar,
                 child: const Text("Salvar"),

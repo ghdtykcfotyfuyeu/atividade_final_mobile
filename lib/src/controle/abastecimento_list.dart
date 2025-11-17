@@ -37,7 +37,9 @@ class _AbastecimentoListPageState extends State<AbastecimentoListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Meus Abastecimentos")),
+      appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: const Text("Meus Abastecimentos")),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.local_gas_station),
         onPressed: () async {
