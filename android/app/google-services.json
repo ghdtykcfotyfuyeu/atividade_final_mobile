@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "56252143042",
+    "project_id": "atividadefinalandre",
+    "storage_bucket": "atividadefinalandre.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56252143042:android:2d7de014e0174ef78db25b",
+        "android_client_info": {
+          "package_name": "com.example.atividadefinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1bbxc4DVO9wvZ9BEBQ4iOKoVp1wUz8QM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
