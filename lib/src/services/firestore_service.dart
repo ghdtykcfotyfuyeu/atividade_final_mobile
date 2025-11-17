@@ -9,9 +9,6 @@ class FirestoreService {
 
   String get uid => _auth.currentUser!.uid;
 
-  // ----------------------------
-  // CRUD VEÍCULOS
-  // ----------------------------
   Future<void> addVeiculo(Veiculo v) async {
     await _db
         .collection("users")
@@ -45,9 +42,6 @@ class FirestoreService {
         .delete();
   }
 
-  // ----------------------------
-  // CRUD ABASTECIMENTOS
-  // ----------------------------
   Future<void> addAbastecimento(Abastecimento a) async {
     await _db
         .collection("users")

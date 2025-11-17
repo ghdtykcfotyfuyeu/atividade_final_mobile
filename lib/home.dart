@@ -3,7 +3,6 @@ import 'package:atividadefinal/src/controle/abastecimento_list.dart';
 import 'package:atividadefinal/src/controle/veiculos_list.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
 import 'src/services/auth_service.dart';
 import 'src/usuarios/login.dart';
 
@@ -91,7 +90,7 @@ class HomePage extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                "Bem-vindo!\n${usuario?.email}",
+                "Bem-vindo\n${usuario?.email}\n Ao Controle de Veículos e Abastecimentos!",
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 20),
               ),

@@ -153,7 +153,6 @@ class _AbastecimentoFormPageState extends State<AbastecimentoFormPage> {
                   DropdownMenuItem(value: "Gasolina", child: Text("Gasolina")),
                   DropdownMenuItem(value: "Etanol", child: Text("Etanol")),
                   DropdownMenuItem(value: "Diesel", child: Text("Diesel")),
-                  DropdownMenuItem(value: "GNV", child: Text("GNV")),
                 ],
                 onChanged: (v) => _combustivel = v!,
               ),
